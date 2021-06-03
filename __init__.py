@@ -20,6 +20,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     say_hello = Hello(name)
     response = {
         'name': say_hello(),
+        'message':'some message',
         'status': 'success'
     }
 
